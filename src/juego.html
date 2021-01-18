@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estils.css" />
+    <script src="js/script.js"></script>
+    <!-- Esto es para los personajes -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Juego</title>
+</head>
+
+<body>
+    <div id="balearic">
+        <h2>BalearicBuild</h2>
+    </div>
+    <div class="apartadoCanvas">
+        <div class="puntuaciones">
+            <div class="dineroPorMinuto">
+                <h2>Dinero/min:</h2>
+                <input type="number" name="dineroMinuto" id="dineroMinuto" readonly class="inputColorBack">
+            </div>
+            <div class="dineroTotal">
+                <h2>Dinero Total:</h2>
+                <input type="number" name="dineroTotal" id="dineroTotal" readonly class="inputColorBack" value="50">
+            </div>
+        </div>
+        <div class="centrarContenedor">
+            <div class="canvas" onclick="colocarEdificio()">
+                <canvas height="600px" width="900px" id="micanvas">
+                    Su navegador no soporta en elemento CANVAS</canvas>
+            </div>
+        </div>
+        <div class="registroEventos">
+            <h2>Eventos:</h2>
+            <input type="text" name="eventos" id="eventos" readonly class="inputColorBack">
+        </div>
+        <div class="apartadoDatosJugador">
+            <h3 id="apodoUsuario"></h3>
+            <img src="" alt="personajeUsuario" id="fotoPersonaje">
+        </div>
+    </div>
+    <div class="centrarContenedor">
+        <div class="casas">
+            <input type="image" src="img/chabola.jpg" alt="xibiu" onclick="construcciones(this)">
+            <input type="image" src="img/casa.jpg" alt="casa" onclick="construcciones(this)">
+            <input type="image" src="img/chalet.jpg" alt="xalet" onclick="construcciones(this)">
+            <input type="image" src="img/hotel.jpg" alt="hotel" onclick="construcciones(this)">
+            <h2>XIBIU</h2>
+            <h2>CASA</h2>
+            <h2>XALET</h2>
+            <h2>HOTEL</h2>
+        </div>
+    </div>
+    <div class="botonesModos">
+        <a class="botonSesion" onclick="cambiarModo(false)">Construir Edificio</a>
+        <a class="botonSesion" onclick="cambiarModo(true)">Mover Edificio</a>
+    </div>
+</body>
+
+</html>

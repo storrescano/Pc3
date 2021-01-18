@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/estils.css" />
+  <script src="js/script.js"></script>
+  <title>Home</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/97c1091046.js" crossorigin="anonymous"></script>
+  <!-- Tipo de letra: Roboto Condensed-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- Tipo de letra para el header: Lato -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <!-- Importar el header y el footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(document).ready(() => {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <!-- Cookies -->
+  <script src="js/cookies.js"></script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="home" id="home">
+    <div class="video">
+      <!-- No funciona el video -->
+      <!-- <iframe src="https://www.youtube.com/watch?v=9r2ga5WaIo0&feature=youtu.be&ab_channel=MonarcoPratsCano"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe> -->
+      <!-- He probado la etiqueta video pero no funciona -->
+      <!-- <video src="https://www.youtube.com/embed/HGWC2ULvd3Q" width="640" height="400"></video> -->
+    </div>
+    <div class="noticias">
+      <h2>Noticias</h2>
+      <ul class="slider">
+        <li id="slide1">
+          <img src="https://www.cambio16.com/wp-content/uploads/2020/05/bosques.jpg" alt="ImagenNoticias1" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repellendus consectetur amet? Assumenda
+            temporibus consequuntur aliquid iste amet quos vel voluptates rem, magnam ea ipsam tenetur ullam id quod
+            unde.
+          </p>
+        </li>
+        <li id="slide2">
+          <img
+            src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5f1fdbe05bafe8e7540b4de7/bosque-slide.jpg"
+            alt="ImagenNoticias2" />
+        </li>
+        <li id="slide3">
+          <h1>Ejemplo con otros elementos</h1>
+          <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
+          <a>¡Corre a mi web para más contenido!</a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#slide1"></a>
+        </li>
+        <li>
+          <a href="#slide2"></a>
+        </li>
+        <li>
+          <a href="#slide3"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="reglas">
+      <h2>Reglas</h2>
+      <div class="normas">
+        <div>
+          <img src="https://www.cambio16.com/wp-content/uploads/2020/05/bosques.jpg" alt="fotoNorma1">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ea sequi recusandae, nam accusamus
+            voluptatum temporibus ipsa iusto quos porro, eos vitae rem neque molestiae a exercitationem dignissimos
+            totam iure.</p>
+        </div>
+        <div>
+          <img src="https://www.cambio16.com/wp-content/uploads/2020/05/bosques.jpg" alt="fotoNorma2">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ea sequi recusandae, nam accusamus
+            voluptatum temporibus ipsa iusto quos porro, eos vitae rem neque molestiae a exercitationem dignissimos
+            totam iure.</p>
+        </div>
+        <div>
+          <img src="https://www.cambio16.com/wp-content/uploads/2020/05/bosques.jpg" alt="fotoNorma3">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ea sequi recusandae, nam accusamus
+            voluptatum temporibus ipsa iusto quos porro, eos vitae rem neque molestiae a exercitationem dignissimos
+            totam iure.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Esta es la cookie -->
+    <div id="emergenteRGPD">
+      <p>Hacemos uso de cookies propias y de terceros para proporcionar una mejor experiencia de usuario. Al seguir
+        navegando entendemos que acepta nuestra
+        <a href="#">Política de Cookies</a>
+        .</p>
+      <div id="botonRGPD">Aceptar</div>
+    </div>
+    <div class="separador"></div>
+  </div>
+  <footer id="footer"></footer>
+</body>
+
+</html>

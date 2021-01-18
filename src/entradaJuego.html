@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EntradaJuego</title>
+    <link rel="stylesheet" type="text/css" href="css/estils.css" />
+    <script src="js/script.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/97c1091046.js" crossorigin="anonymous"></script>
+    <!-- Tipo de letra: Roboto Condensed-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Tipo de letra para el header: Lato -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- Importar el header y el footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(() => {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- Esto es para los personajes -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="form">
+        <div class="colorFondo">
+            <h2>Datos para jugar:</h2>
+            <br>
+            <h3>Escribe tu apodo/nickname:</h3>
+            <input type="text" name="apodoUser" id="apodo" placeholder="ej. Pepe23">
+            <br>
+            <h3>Elige un personaje:</h3>
+            <div class="seleccion" id="imagenes">
+            </div>
+            <a class="botonSesion" id="alturaBoton" href="juego.html">Jugar</a>
+            <br>
+            <div class="separador2"></div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>
