@@ -1,0 +1,28 @@
+{
+  "name": "Pc3",
+  "version": "1.0.0",
+  "description": "* Header:\r  1. En la version de ordenador lo hemos puesto igual que en el wireframe.\r  1. En la version de movil lo hemos hecho casi igual, la unica \r  diferencia a sido que el menu es responsive por lo que en el\r  movil no es una barra con 3 elementos y con otra barra debajo\r  con 2 elementos mas, en vez de eso hay unos puntos a la derecha\r  y al darle click entonces saldra todo el menu.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storrescano/Pc3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storrescano/Pc3/issues"
+  },
+  "homepage": "https://github.com/storrescano/Pc3#readme"
+}
