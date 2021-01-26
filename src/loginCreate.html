@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/estils.css" />
+  <link rel="stylesheet" type="text/css" href="css/forms.css" />
+  <script src="js/logIn.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="containerLogo">
+    <img
+      src="img/mafiadude.png"
+      alt="logo">
+  </div>
+  <form method="get" name="formDatosPersonales">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="ej. Paco" />
+
+    <label for="apellidos">Apellidos</label>
+    <input type="text" name="apellidos" id="apellidos" placeholder="ej. Prats Torres" />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="ej. aaaaaaaa@bbbbbb.ccc" />
+
+    <label for="emailComprobar">Comprobar Email</label>
+    <input type="email" name="emailComprobar" id="emailComprobar" placeholder="ej. aaaaaaaa@bbbbbb.ccc" />
+
+    <label for="contraseña">Password</label>
+    <input type="password" name="contraseña" id="contraseña" />
+
+    <label for="contraseñaComprobar">Comprobar Pass</label>
+    <input type="password" name="contraseñaComprobar" id="contraseñaComprobar" />
+
+    <label for="usuario">Username</label>
+    <input type="text" name="usuario" id="usuario" placeholder="ej. El_cacahuete" aria-required="true" />
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" name="telefono" id="telefono" placeholder="ej. 664526279" />
+
+    <label for="pais">Pais</label>
+    <select name="pais" id="pais">
+      <option>España</option>
+      <option>Finlandia</option>
+      <option>Japón</option>
+      <option>Corea del sur</option>
+    </select> <br>
+
+    <input type="radio" name="opcion" />Sí, tengo más de 18 años. <br>
+    <input type="radio" name="opcion" />No, tengo menos de 18 años.
+
+
+
+    <input type="submit" name="enviar" value="ENVIAR" />
+  </form>
+
+</body>
+
+</html>

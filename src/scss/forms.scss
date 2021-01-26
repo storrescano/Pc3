@@ -1,0 +1,100 @@
+/*Formularios*/
+/*sass src/scss/forms.scss src/css/forms.css*/
+@import "modulColor";
+
+@mixin bordear($ancho, $color, $radio) {
+	border: $ancho solid $color;
+	border-radius: $radio;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 30px;
+}
+
+form {
+	width: 400px;
+	padding: 16px;
+	border-radius: 10px;
+	margin: auto;
+	background-color: $colorGris;
+	color: $colorNegro;
+
+	label {
+		width: 130px;
+		font-weight: bold;
+		display: inline-block;
+		color: $colorNegro;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="password"] {
+		@include bordear(1px, $colorBlanco, 3px);
+		width: 220px;
+		padding: 3px 10px;
+		background-color: $colorBlanco;
+		margin: 8px 0;
+		display: inline-block;
+		color:$colorNegro;
+	}
+
+	input[type="submit"] {
+		@include bordear(1px, $colorNegro, 5px);
+		width: 100%;
+		padding: 8px 16px;
+		margin-top: 15px;
+		display: block;
+		color: $colorBlanco;
+		background-color: $colorNegro;
+
+		//& es el equivalente del input padre
+		&:hover {
+			cursor: pointer;
+			background-color: $colorGris;
+			color: $colorNegro;
+		}
+	}
+
+	input[type="radio"] {
+		margin-top: 8px;
+		margin-left: 134px;
+	}
+
+	#pais {
+		color: $colorNegro;
+
+		option {
+			color: $colorNegro;
+		}
+	}
+}
+
+#containerLogo {
+	position: fixed;
+	left: 85%;
+	top: 80%;
+
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 600px) {
+	#containerLogo {
+		@include bordear(1px, #f6f6f6, 10px);
+		position: initial;
+		text-align: center;
+		width: 400px;
+		margin: 0% auto;
+		margin-bottom: 30px;
+		background-color: $colorGris;
+		background-color: $colorGris;
+	}
+}
+/*-------------------------*/

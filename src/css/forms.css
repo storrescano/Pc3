@@ -1,0 +1,89 @@
+/*Formularios*/
+/*sass src/scss/forms.scss src/css/forms.css*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+}
+
+form {
+  width: 400px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+  color: #222020;
+}
+form label {
+  width: 130px;
+  font-weight: bold;
+  display: inline-block;
+  color: #222020;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form input[type=password] {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 220px;
+  padding: 3px 10px;
+  background-color: #fff;
+  margin: 8px 0;
+  display: inline-block;
+  color: #222020;
+}
+form input[type=submit] {
+  border: 1px solid #222020;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 15px;
+  display: block;
+  color: #fff;
+  background-color: #222020;
+}
+form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #222020;
+}
+form input[type=radio] {
+  margin-top: 8px;
+  margin-left: 134px;
+}
+form #pais {
+  color: #222020;
+}
+form #pais option {
+  color: #222020;
+}
+
+#containerLogo {
+  position: fixed;
+  left: 85%;
+  top: 80%;
+}
+#containerLogo img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  #containerLogo {
+    border: 1px solid #f6f6f6;
+    border-radius: 10px;
+    position: initial;
+    text-align: center;
+    width: 400px;
+    margin: 0% auto;
+    margin-bottom: 30px;
+    background-color: #ccc;
+    background-color: #ccc;
+  }
+}
+/*-------------------------*/
+
+/*# sourceMappingURL=forms.css.map */
